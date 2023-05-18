@@ -29,12 +29,10 @@ const resetButton = document.querySelector('#resetButton')
         
       });
 
-      // Move resetButton event listener outside of the forEach loop
     });
   });
 
 
-       // Reset button event listener moved outside of the forEach loop
 resetButton.addEventListener('click', function () {
   const gridItemsToReset = document.querySelectorAll('.grid-item');
 
