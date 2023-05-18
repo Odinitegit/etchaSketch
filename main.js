@@ -2,12 +2,20 @@ const container = document.querySelector('.grid-container')
 const button = document.querySelector('#buttons')
 const resetButton = document.querySelector('#resetButton')
 
-  button.addEventListener('click',function() {
-    
-     let size = prompt('Enter Size', '')
-    
-    for(let i = 0; i < size * size  ; i++){
+  
+
+    button.addEventListener('click',function() {
+      
+      container.innerHTML = '';
+     let size = prompt('Choose your Grid Size (Up to 100x100)', '')
+      
+      for(let i = 0; i < size * size  ; i++){
  
+        if(size > 100){
+          alert('Wrong Value Choose a number between 1-100');
+          break;
+         }else{
+
       let newDiv = document.createElement('div');
     
        newDiv.classList.add('grid-item');
@@ -15,7 +23,7 @@ const resetButton = document.querySelector('#resetButton')
       container.appendChild(newDiv);
     }
     
-  
+     }
 
   let gridItems = document.querySelectorAll('.grid-item');
 

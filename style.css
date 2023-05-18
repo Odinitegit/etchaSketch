@@ -44,4 +44,5 @@ body {
     height: 16px;
     width: 16px;
     background-color: rgb(240, 240, 240);
+    gap: 0;
 }
