@@ -9,12 +9,16 @@ const resetButton = document.querySelector('#resetButton')
       container.innerHTML = '';
      let size = prompt('Choose your Grid Size (Up to 100x100)', '')
       
-      for(let i = 0; i < size * size  ; i++){
+     
+     
+     if(size > 100 || size < 1 || isNaN(size)){
+      alert('Wrong value, Choose a number between 1-100.');
+      
+    }else{
+     
+    for(let i = 0; i < size * size  ; i++){
  
-        if(size > 100){
-          alert('Wrong Value Choose a number between 1-100');
-          break;
-         }else{
+        
 
       let newDiv = document.createElement('div');
     
