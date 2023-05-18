@@ -1,15 +1,47 @@
-
-
-/* grid container styling and appended div container styles*/
-.grid-container{
+body {
     display: flex;
-    flex-wrap: wrap;
-    width: 640px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: red;
+}
+
+.buttons {
+    display: flex;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
 
 }
 
-.grid-item{
-    width: 40px;
-    height: 40px;
+.buttons:hover {
+    background-color: gray;
+}
+
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    min-width: 100vw;
+    width: 50%;
+    height: 50%;
+
+
+
+}
+
+.grid-item {
+    display: flex;
+    box-sizing: border-box;
     border: 1px solid black;
+    height: 16px;
+    width: 16px;
+    background-color: rgb(240, 240, 240);
 }
